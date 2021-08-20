@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Media das notas</title>
+
+	<style>
+		body{
+			background:black;
+			color:white;
+			font-size:25px;
+			text-align:center;
+		}
+	</style>
+</head>
+<body>
+
+	<script>
+		
+		var nota1=parseInt(prompt("Digite primeira nota"));
+		var nota2=parseInt(prompt("Digite segunda nota"));
+		var nota3=parseInt(prompt("Digite terceira nota"));
+		var nota4=parseInt(prompt("Digite quarta nota"));
+
+		var media=(nota1 + nota2 + nota3 + nota4)/4;
+
+		if(media >= 7){
+			document.write("Parabens, voce foi aprovado");
+		}
+		else if(media < 7 && media > 5){
+			document.write("Voce esta de recuperacao");
+		}
+		if(media < 5){
+            document.write("Voce foi reprovado");
+		}
+	</script>
+
+</body>
+</html>
